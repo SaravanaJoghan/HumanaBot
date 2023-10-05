@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (selectedMethod === 'gpt2') {
             // Call the server to get a GPT-2 response
             try {
-                const response = await fetch('http://192.168.137.1:5000/get_gpt2_response', {
+                const response = await fetch('https://192.168.137.1:5000/get_gpt2_response', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (selectedMethod === 'cosine_similarity') {
             // Call the server to get a cosine similarity-based response
             try {
-                const response = await fetch('http://192.168.137.1:5000/get_cosine_similarity_response', {
+                const response = await fetch('https://192.168.137.1:5000/get_cosine_similarity_response', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
